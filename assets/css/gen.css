@@ -1,0 +1,86 @@
+/*|| Reset*/
+html, body, main, article, section, header, footer, h1, h2, h3, h4, p, ul, li, a, nav, div, blockquote {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*|| Main structure*/
+:root {
+  font-family: Helvetica, Times;
+}
+html, body, main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html {
+  width: 100vw;
+  min-height: 100vh;
+}
+body {
+  width: min(100vw, 1080px);
+  height: 100%;
+}
+main {
+  width: min(100%, 800px);
+}
+h1 {
+  text-align: center;
+  margin: 1.25rem 0 1.5rem;
+}
+/*|| Blurb for main and about*/
+#mugshot {
+  float: left;
+  margin: 0.4rem 1rem 0 0;
+}
+main {
+  display: inline-block;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+/*! hard-coded breakpoint?*/
+@media screen and (max-width: 570px) {
+  #mugshot {
+    float: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+/*|| Header */
+header {
+  width: 100%;
+  padding: 2rem 0.5rem;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem 3rem;
+}
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+}
+/*|| Footer*/
+footer, footer>p {
+  width: 100%;
+  text-align: center;
+}
+/*! visibility for Francesca*/
+/*
+body, h2, li, main, header, footer, #testimonials {
+  border: solid black 2px;
+}*/
