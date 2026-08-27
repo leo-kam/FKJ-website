@@ -6,7 +6,8 @@ html, body, main, article, section, header, footer, h1, h2, h3, h4, p, ul, li, a
 }
 /*|| Main structure*/
 :root {
-  font-family: Helvetica, Times;
+  font-family: Garamond, Cambria, Perpetua, serif;
+  background-color: #FDFBF7;
 }
 html, body, main {
   display: flex;
@@ -27,6 +28,18 @@ main {
 h1 {
   text-align: center;
   margin: 1.25rem 0 1.5rem;
+}
+/*|| Text*/
+h1, h2, h3, nav, footer {
+  font-family: 'Baskerville', 'Didot', 'Libre Baskerville', 'Baskerville Old Face', serif;
+  font-weight: bold;
+}
+a {
+  color: #2A4C7E;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #C09030;
 }
 /*|| Blurb for main and about*/
 #mugshot {
@@ -53,6 +66,7 @@ main {
 header {
   width: 100%;
   padding: 2rem 0.5rem;
+  border-bottom: 4px solid #3D2B1F;
 }
 nav {
   width: 100%;
@@ -78,6 +92,13 @@ nav ul {
 footer, footer>p {
   width: 100%;
   text-align: center;
+}
+footer {
+  background: #FDFBF7;
+  position: sticky;
+  bottom: 0;
+  padding: 0.5rem 0 1rem;
+  border-top: 4px solid #3D2B1F;
 }
 /*! visibility for Francesca*/
 /*

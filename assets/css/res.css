@@ -2,7 +2,19 @@
 section {
   margin-top: 1rem;
 }
-section ul {
+#pub {
   list-style: none;
   margin: 0.5rem 0 0 1rem;
+}
+#pub li {
+  margin-top: 0.5rem;
+}
+#covers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 0.5rem
+}
+.cover {
+  width: 240px;
 }
